@@ -38,7 +38,7 @@ header {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     gap: 0px 35px;
 }
@@ -76,6 +76,7 @@ section {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 
 .main-container h2 {
     color: white;
@@ -296,7 +297,6 @@ section {
 
 .footer-info {
     display: flex;
-
 }
 
 .footer-icons {
@@ -320,4 +320,58 @@ section {
     color: #ffffff;
 }
 
-@media 
+@media (max-width:1023px){
+    section{
+        padding: 80px 20px;
+    }
+    /* header */
+    header{
+        padding: 8px 20px;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+    nav ul {
+        gap: 0 23px;
+    }
+    nav ul li a {
+        font-size: 1em;
+    }
+    /* main content*/
+    .main {
+        padding: 100px 20px;
+        flex-direction: column;
+        background-image: linear-gradient(to right,#131478 0% 10%, transparent);
+    }
+    .main-container h2{
+        font-size: 1.4em;
+    }
+    .main-container h3 {
+        font-size: 1.8em;
+    }
+
+    /* services */
+    .title {
+        font-size: 1.8em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* footer */
+    .footer {
+        padding: 0.5em 0.5em;
+
+    }
+    .footer-info {
+        font-size: 1em;
+    }
+
+    .footer-icons {
+        font-size: 1em;
+        margin-right: 20px;
+    }
+    
+}
