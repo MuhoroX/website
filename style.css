@@ -320,7 +320,7 @@ section {
     color: #ffffff;
 }
 
-@media (max-width:1023px){
+@media (max-width:767px){
     section{
         padding: 80px 20px;
     }
@@ -339,7 +339,7 @@ section {
     }
     /* main content*/
     .main {
-        padding: 100px 20px;
+        padding: 180px 15px;
         flex-direction: column;
         background-image: linear-gradient(to right,#131478 0% 10%, transparent);
     }
@@ -373,5 +373,22 @@ section {
         font-size: 1em;
         margin-right: 20px;
     }
-    
+}
+
+@media (max-width: 576px) {
+    body {
+      font-size: 14px;
+    }
+}
+
+  @media (max-width:360px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+  @media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
 }
